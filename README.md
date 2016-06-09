@@ -1,6 +1,6 @@
 # Kick API of the Travis CI from Lambda on AWS
 
-
+Build thorough the API of the Travis CI from Lambda on AWS.
 
 ```
 $ git clone git@github.com:miya0001/lambda-kick-travis.git
@@ -16,3 +16,9 @@ $ zip -r lambda.zip index.js config node_modules
 ![](https://www.evernote.com/l/ABWI0D8cP-VG25hJm5kygYYh-fgeqM58itkB/image.png)
 
 ![](https://www.evernote.com/l/ABU6V6lpzrBDiZnkc1NkxI3H9_YGMCdLMCUB/image.png)
+
+## How to get token
+
+```
+$ travis token
+```

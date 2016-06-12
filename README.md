@@ -2,13 +2,32 @@
 
 Build thorough the API of the Travis CI from Lambda on AWS.
 
+## Getting started
+
 ```
 $ git clone git@github.com:miya0001/lambda-kick-travis.git
 $ cd lambda-kick-travis
 $ npm install
-$ cp config/default.json.sample config/default.json
-$ vi config/default.json
-$ zip -r lambda.zip index.js config node_modules
+```
+
+### Create config for Travis CI.
+
+```
+$ cp config/travis-config.js.sample config/travis-config.js
+$ vi config/travis-config.js
+```
+
+### Create config for Lambda.
+
+```
+$ cp config/lambda-config.js.sample config/lambda-config.js
+$ vi config/lambda-config.js
+```
+
+### Then deploy to Lambda.
+
+```
+$ npm run deploy
 ```
 
 ![](https://www.evernote.com/l/ABUZ59lbVhpJsZIwZS7eiNCazUBAlkGzg2QB/image.png?v1)

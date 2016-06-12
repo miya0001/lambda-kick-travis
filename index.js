@@ -16,9 +16,9 @@ exports.kickTravis = function(event, context) {
     })
     .end(function(err, res){
       if (err) {
-        console.log(err);
+        context.fail(err);
       } else {
-        console.log('OK');
+        context.succeed('OK');
       }
     });
 }

@@ -1,4 +1,4 @@
-# Fires the API of the Travis CI from Lambda on AWS
+# Travis Builder for Lambda
 
 Build thorough the API of the Travis CI from Lambda on AWS.
 

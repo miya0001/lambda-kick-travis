@@ -1,13 +1,13 @@
 var request = require('superagent');
-var config = require('config');
+var config = require('./config/travis-config.js');
 
 exports.kickTravis = function(event, context) {
   request
-    .post('https://api.travis-ci.org/repo/' + config.get('user') + '%2F' + config.get('repo')+'/requests')
+    .post('https://api.travis-ci.org/repo/' + config.user + '%2F' + config.repo +'/requests')
     .set('Content-Type', 'application/json')
     .set('Accept', 'application/json')
     .set('Travis-API-Version', '3')
-    .set('Authorization', 'token "' + config.get('token') + '"')
+    .set('Authorization', 'token "' + config.token + '"')
     .send({
       "request": {
         "message": "Build through API from Lambda",
